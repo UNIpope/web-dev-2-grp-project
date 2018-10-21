@@ -28,24 +28,29 @@
 	<!-- navbar, set the default navbar with fixed position at the top-->
 	<nav class="navbar navbar-default navbar-fixed-top">
 	 	<div class="container-fluid">
-		  
-		    <ul class="nav navbar-nav navbar-right">
-		    	<li><a href="#home">HOME</a></li>
-		        <li><a href="#about">ABOUT</a></li>
-		        <li><a href="#scoop">SCOOP</a></li>
-		        <li><a href="#topping">TOPPING</a></li>
-		        <li><a href="#contact">CONTACT</a></li>
-		        <li><a href="#user"><span class="glyphicon glyphicon-user"></span></a></li>
-		        <li><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
-		        <li><a href="#cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-		    </ul>
-		   
+	 		<div class="collapse navbar-collapse" id="mynavbar">
+			  
+			    <ul class="nav navbar-nav navbar-right">
+			    	<li><a href="#home">HOME</a></li>
+			        <li><a href="#about">ABOUT</a></li>
+			        <li><a href="#scoop">SCOOP</a></li>
+			        <li><a href="#topping">TOPPING</a></li>
+			        <li><a href="#contact">CONTACT</a></li>
+			        <li><a href="#user"><span class="glyphicon glyphicon-user"></span></a></li>
+			        <li><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
+			        <li><a href="#cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+			    </ul>
+		   	</div>
 	  	</div>
 	</nav>
 
 	<div class="container">
-		<img src="header-scoops.png" width="100%">
-		
+		<img src="header-scoops.png" width="100%">	
+
+		<div class="jumbotron">
+			<h1 style="text-align: center;">my CONEection</h1>
+			
+		</div>	
 	</div>
 
 
