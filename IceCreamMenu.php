@@ -47,10 +47,14 @@
 	<div class="container">
 		<img src="header-scoops.png" width="100%">	
 
-		<div class="jumbotron">
-			<h1 style="text-align: center;">my CONEection</h1>
+		<div class="jumbotron jum-name">
+			<h1>My CONEection</h1>
 			
 		</div>	
+
+		<div class="jumbotron">
+			<h3 ><mark>Info</mark></h3>
+		</div>
 	</div>
 
 

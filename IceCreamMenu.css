@@ -7,6 +7,10 @@ body
 {
     font-family: "Courier New";
 }
+mark
+{
+    /*background-color: white;*/
+}
 
 .navbar
 {
@@ -33,7 +37,9 @@ body
     background-color: #fff !important;
 }
 
-.jumbotron
+/*change the colour of jum-name */
+.jum-name
 {
     background-color: lavenderblush !important;
+    text-align: center;
 }
