@@ -30,6 +30,21 @@
 	<!-- navbar, set the default navbar with fixed position at the top-->
 	<nav class="navbar navbar-default navbar-fixed-top">
 	 	<div class="container-fluid">
+
+
+	 		<!-- phone button -->
+	 		<div class="navbar-header">
+	 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="mynavbar">
+	 				<span class="icon-bar"></span>
+	 				<span class="icon-bar"></span>
+	 				<span class="icon-bar"></span>
+	 			</button>
+	 			<a class="navbar-brand" href="#">
+	 			
+	 		</div>
+
+
+	 		<!-- web browser-->
 	 		<div class="collapse navbar-collapse" id="mynavbar">
 			  
 			    <ul class="nav navbar-nav navbar-right">
@@ -75,21 +90,57 @@
 		<div class="container text-center bg-grey" id="scoop">
 			<h2 >Scoopies</h2>
 			<div class="row text-center">
-				<div class="jumbotron">
 					<div class="thumbnail">
 					<img src="bananaNstraw.png">
 					<p>Banan and Strawberry</p>
-				</div>
+			
 				</div>
 				
 				<div class="thumbnail">
 					<img src="bubblegum.png">
 					<p>Bubble gum</p>
 				</div>
+
 				<div class="thumbnail">
 					<img src="chocchip.png">
 					<p>Chocolate chips</p>
 				</div>
+
+				<div class="thumbnail">
+					<img src="cookiesNcream.png">
+					<p>Cookies and cream</p>
+				</div>
+
+				<div class="thumbnail">
+					<img src="darkchoc.png">
+					<p>Dark Chocolate</p>
+				</div>
+
+				<div class="thumbnail">
+					<img src="macha.png">
+					<p>Matcha</p>
+				</div>
+
+				<div class="thumbnail">
+					<img src="strw.png">
+					<p>Strawberry</p>
+				</div>
+
+				<div class="thumbnail">
+					<img src="strwcheesecake.png">
+					<p>Strawberry Chessecake</p>
+				</div>
+
+				<div class="thumbnail">
+					<img src="strwchoc.png">
+					<p>Chocolate Strawberry</p>
+				</div>
+
+				<div class="thumbnail">
+					<img src="vanilla.png">
+					<p>Vanilla</p>
+				</div>
+
 			</div>
 			
 		</div>

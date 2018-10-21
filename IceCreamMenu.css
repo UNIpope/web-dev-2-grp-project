@@ -37,6 +37,13 @@ mark
     background-color: #fff !important;
 }
 
+
+.navbar-default .navbar-toggle
+{
+    border-color: transparent;
+    color: #fff !important;
+}
+
 /*change the colour of jum-name */
 .jum-name
 {
