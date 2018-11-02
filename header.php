@@ -2,6 +2,7 @@
 	Website: Ice Cream Store
 	Purpose: Display the header
 	Authors: Jack Duggan + Buchita Gitchamnan	
+	reference: www.w3schools.com
 -->
 
 <!DOCTYPE html>
@@ -99,29 +100,14 @@
 			        <li><a href="#contact">CONTACT</a></li>
 			        <li><a href="#user"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="#cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-			        <li><a href="#search"><input type="text" class="form-control" placeholder="Search..." id="input"></a></li> 
+			        <li><a href="#search"><input type="text" class="form-control" placeholder="Search..." id="input" onkeyup="myFunction()"></a></li> 
 			       
 			    </ul>
 		   	</div>
 	  	</div>
 	</nav>
 
-
-	<script type="text/javascript">
-		
-		$(document).ready(function()
-		{
-			$("#input").on("keyup",function()
-			{
-				var value = $(this).val().toLowerCase();
-				$("#myList li").filter(function()
-				{
-					$(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
-				});
-			});
-
-		});
-	</script>
+	
 
 </body>
 </html>

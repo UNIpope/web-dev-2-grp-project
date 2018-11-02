@@ -2,6 +2,7 @@
 	Website: Ice Cream Store
 	Purpose: Display the menu of the shop
 	Authors: Jack Duggan + Buchita Gitchamnan	
+	Reference: www.w3schools.com
 -->
 
 <!DOCTYPE html>
@@ -82,6 +83,7 @@
 
 						<!-- declare card -->
 						<div class="card sm-6 box-shadow">
+							<a target="_self" href="bananaNstraw.php">
 
 							<!-- img at the top of the card-->
 							<img class="card-imag-top" src="bananaNstraw.png">
@@ -92,10 +94,11 @@
 								<h3 class="card-title">Strawberry and Banana</h3>
 
 								<p class="card-text">details</p>
-
 								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+
 								<br>
 								<br>
+							</a>
 
 							</div><!-- end card body-->
 						</div><!-- end card-->							
@@ -355,10 +358,9 @@
 		</div><!-- end scoop-->
 	</div><!-- end home-->
 
-
-	<script type="text/javascript">
+<script type="text/javascript">
 			
-			//search bar //not working 
+			/*//search bar //not working 
 			$(document).ready(function()
 			{
 				$("#input").on("keyup",function()
@@ -370,8 +372,35 @@
 					});
 				});
 
-			});
+			});*/
+
+
+
+			function myFunction()
+			{
+				var input, filter, ul, li, i, a;
+
+				input = document.getElementById("input");
+				filter = input.value.toUpperCase();
+				ul = document.getElementById("myList");
+				li = ul.getElementByTagName("li");
+
+				for (var i = 0; i < li.length; i++) 
+				{
+					a = li[i].getElementByTagName("a")[0];
+					if (a.innerHTML.toUpperCase().indexOf(filter)>-1)
+					{
+						li[i].style.display="";
+					}
+					else
+					{
+						li[i].style.display="none";
+					}
+				}
+			}
 	</script>
+
+
 
 </body>
 </html>

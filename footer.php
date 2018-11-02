@@ -2,6 +2,7 @@
 	Website: Ice Cream Store
 	Purpose: Display the header
 	Authors: Jack Duggan + Buchita Gitchamnan	
+	Reference: www.w3schools.com
 -->
 
 <!DOCTYPE html>
