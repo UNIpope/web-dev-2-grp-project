@@ -9,7 +9,7 @@ body
 }
 mark
 {
-    /*background-color: white;*/
+    background-color: #D6D628;
 }
 
 .navbar
@@ -44,9 +44,15 @@ mark
     color: #fff !important;
 }
 
-/*change the colour of jum-name */
-.jum-name
+
+.jum-menu
 {
-    background-color: lavenderblush !important;
-    text-align: center;
+    background-color: lavender;
 }
+
+#pic{
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+

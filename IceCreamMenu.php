@@ -23,51 +23,47 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="IceCreamMenu.css">
+
+
+
+
+
+
+	<script type="text/javascript">
+		
+		$(document).ready(function()
+		{
+			$("#input").on("keyup",function()
+			{
+				var value = $(this).val().toLowerCase();
+				$("#menu div").filter(function()
+				{
+					$(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
+				});
+			});
+
+		});
+	</script>
+
+
 </head>
 
 <!-- for scrolling and the navbar is keeping track-->
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<!-- navbar, set the default navbar with fixed position at the top-->
-	<nav class="navbar navbar-default navbar-fixed-top">
-	 	<div class="container-fluid">
-
-
-	 		<!-- phone button -->
-	 		<div class="navbar-header">
-	 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="mynavbar">
-	 				<span class="icon-bar"></span>
-	 				<span class="icon-bar"></span>
-	 				<span class="icon-bar"></span>
-	 			</button>
-	 			<a class="navbar-brand" href="#">
-	 			
-	 		</div>
-
-
-	 		<!-- web browser-->
-	 		<div class="collapse navbar-collapse" id="mynavbar">
-			  
-			    <ul class="nav navbar-nav navbar-right">
-			    	<li><a href="#home">HOME</a></li>
-			        <li><a href="#about">ABOUT</a></li>
-			        <li><a href="#scoop">SCOOP</a></li>
-			        <li><a href="#topping">TOPPING</a></li>
-			        <li><a href="#contact">CONTACT</a></li>
-			        <li><a href="#user"><span class="glyphicon glyphicon-user"></span></a></li>
-			        <li><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
-			        <li><a href="#cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-			    </ul>
-		   	</div>
-	  	</div>
-	</nav>
+<body>
+	<?php
+		//navbar
+		require('header.php');
+	?>
 
 	<!-- add banner-->
-	<div class="container" id="home">
-		<img src="header-scoops.png" width="100%">	
+	<div class="container" id="home" > 
+		
+		<img id="pic" src="header-scoops.png" width="100%">
 
 		<!-- name of the store-->
-		<div class="jumbotron jum-name">
-			<h1>My CONEection</h1>	
+		<div class="jumbotron" style="background-color: #D4F5C5;">
+
+			<h1>I scream</h1>	
 		</div>	
 
 		<!-- about section starts-->
@@ -86,69 +82,291 @@
 			In other countries, such as Italy and Argentina, one word is used for all variants. 
 			Analogues made from dairy alternatives, such as goat's or sheep's milk, or milk substitutes (e.g., soy milk or tofu), are available for those who are lactose intolerant, allergic to dairy protein, or vegan.</p>
 		</div>
+		<br>
 
-		<div class="container text-center bg-grey" id="scoop">
-			<h2 >Scoopies</h2>
-			<div class="row text-center">
-					<div class="thumbnail">
-					<img src="bananaNstraw.png">
-					<p>Banan and Strawberry</p>
+		<div class="container-fluid" id="scoop">
 			
-				</div>
-				
-				<div class="thumbnail">
-					<img src="bubblegum.png">
-					<p>Bubble gum</p>
-				</div>
-
-				<div class="thumbnail">
-					<img src="chocchip.png">
-					<p>Chocolate chips</p>
-				</div>
-
-				<div class="thumbnail">
-					<img src="cookiesNcream.png">
-					<p>Cookies and cream</p>
-				</div>
-
-				<div class="thumbnail">
-					<img src="darkchoc.png">
-					<p>Dark Chocolate</p>
-				</div>
-
-				<div class="thumbnail">
-					<img src="macha.png">
-					<p>Matcha</p>
-				</div>
-
-				<div class="thumbnail">
-					<img src="strw.png">
-					<p>Strawberry</p>
-				</div>
-
-				<div class="thumbnail">
-					<img src="strwcheesecake.png">
-					<p>Strawberry Chessecake</p>
-				</div>
-
-				<div class="thumbnail">
-					<img src="strwchoc.png">
-					<p>Chocolate Strawberry</p>
-				</div>
-
-				<div class="thumbnail">
-					<img src="vanilla.png">
-					<p>Vanilla</p>
-				</div>
-
-			</div>
 			
-		</div>
+			<h2 ><mark>Scoopies</mark></h2>
+			<!-- start the menu-->
+				<div class="row text-center" id="menu">
 
-	</div>
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #D8C0F1;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="bananaNstraw.png">
+
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">bAnaNa aNd sTRawBeRrY</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+
+							</div><!-- end card body-->
+						</div><!-- end card-->							
+					</div><!-- end half -->
 
 
 
+					<!-- 2 -->
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #F1CE71;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="bubblegum.png">
+							
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">Bubble gum</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+									
+							</div><!-- end card body-->						
+						</div><!-- end card-->	
+								
+					</div><!-- end half -->
+					
+
+					<!-- 3-->
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #9EDCED;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="chocchip.png">
+							
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">Chocolate chips</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+									
+							</div><!-- end card body-->						
+						</div><!-- end card-->	
+								
+					</div><!-- end half -->
+
+
+					<!-- 4 -->
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #F2B45B;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="cookiesNcream.png">
+							
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">Cookies and cream</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+									
+							</div><!-- end card body-->						
+						</div><!-- end card-->	
+								
+					</div><!-- end half -->	
+
+
+					<!-- 5-->
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #AAF1AC;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="darkchoc.png">
+							
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">Dark Chocolate</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+									
+							</div><!-- end card body-->						
+						</div><!-- end card-->	
+								
+					</div><!-- end half -->
+
+
+					<!-- 6 -->
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #AFC1C1;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="macha.png">
+							
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">Matcha</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+									
+							</div><!-- end card body-->						
+						</div><!-- end card-->	
+								
+					</div><!-- end half -->
+
+
+					<!--7-->
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #F1B78D;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="strw.png">
+							
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">Strawberry</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+									
+							</div><!-- end card body-->						
+						</div><!-- end card-->	
+								
+					</div><!-- end half -->
+
+
+
+					<!--8-->
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #EDCFE2;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="strwcheesecake.png">
+							
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">Strawberry Chessecake</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+									
+							</div><!-- end card body-->						
+						</div><!-- end card-->	
+								
+					</div><!-- end half -->
+
+
+					<!--9-->
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #9EDCED;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="vanilla.png">
+							
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">Vanilla</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+									
+							</div><!-- end card body-->						
+						</div><!-- end card-->	
+								
+					</div><!-- end half -->
+
+
+
+					<!--10-->
+					<!-- set the menu to be half ie 6-->
+					<div class="col-sm-6" style="background-color: #F7F2AF;">
+
+						<!-- declare card -->
+						<div class="card sm-6 box-shadow">
+
+							<!-- img at the top of the card-->
+							<img class="card-imag-top" src="strwchoc.png">
+							
+							<!-- start the card body-->
+							<div class="card-body">
+
+								<h3 class="card-title">Chocolate Strawberry</h3>
+
+								<p class="card-text">details</p>
+
+								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<br>
+								<br>
+									
+							</div><!-- end card body-->						
+						</div><!-- end card-->	
+								
+					</div><!-- end half -->
+						
+						
+
+				</div><!--end class-row-text-->
+					
+		</div><!-- end scoop-->
+	</div><!-- end home-->
 
 
 </body>
