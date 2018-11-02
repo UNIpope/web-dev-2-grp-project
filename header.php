@@ -99,7 +99,7 @@
 			        <li><a href="#contact">CONTACT</a></li>
 			        <li><a href="#user"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="#cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-			        <li><a href="#search"><input type="text" class="form-control" placeholder="Search..." id="input"> <span class="glyphicon glyphicon-search"></span></a></li> 
+			        <li><a href="#search"><input type="text" class="form-control" placeholder="Search..." id="input"></a></li> 
 			       
 			    </ul>
 		   	</div>
@@ -107,7 +107,21 @@
 	</nav>
 
 
-	
+	<script type="text/javascript">
+		
+		$(document).ready(function()
+		{
+			$("#input").on("keyup",function()
+			{
+				var value = $(this).val().toLowerCase();
+				$("#myList li").filter(function()
+				{
+					$(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
+				});
+			});
+
+		});
+	</script>
 
 </body>
 </html>

@@ -29,21 +29,7 @@
 
 
 
-	<script type="text/javascript">
-		
-		$(document).ready(function()
-		{
-			$("#input").on("keyup",function()
-			{
-				var value = $(this).val().toLowerCase();
-				$("#menu div").filter(function()
-				{
-					$(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
-				});
-			});
-
-		});
-	</script>
+	
 
 
 </head>
@@ -88,11 +74,11 @@
 			
 			
 			<h2 ><mark>Scoopies</mark></h2>
-			<!-- start the menu-->
-				<div class="row text-center" id="menu">
+			<!-- start the menu. no style for the list-->
+				<ul class="list-unstyled" id="myList"><div class="row text-center">
 
 					<!-- set the menu to be half ie 6-->
-					<div class="col-sm-6" style="background-color: #D8C0F1;">
+					<li><div class="col-sm-6" style="background-color: #D8C0F1;">
 
 						<!-- declare card -->
 						<div class="card sm-6 box-shadow">
@@ -103,7 +89,7 @@
 							<!-- start the card body-->
 							<div class="card-body">
 
-								<h3 class="card-title">bAnaNa aNd sTRawBeRrY</h3>
+								<h3 class="card-title">Strawberry and Banana</h3>
 
 								<p class="card-text">details</p>
 
@@ -113,7 +99,7 @@
 
 							</div><!-- end card body-->
 						</div><!-- end card-->							
-					</div><!-- end half -->
+					</div></li><!-- end half -->
 
 
 
@@ -363,11 +349,29 @@
 						
 						
 
-				</div><!--end class-row-text-->
+				</div>
+			</ul><!--end class-row-text-->
 					
 		</div><!-- end scoop-->
 	</div><!-- end home-->
 
+
+	<script type="text/javascript">
+			
+			//search bar //not working 
+			$(document).ready(function()
+			{
+				$("#input").on("keyup",function()
+				{
+					var value = $(this).val().toLowerCase();
+					$("#myList li").filter(function()
+					{
+						$(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
+					});
+				});
+
+			});
+	</script>
 
 </body>
 </html>
