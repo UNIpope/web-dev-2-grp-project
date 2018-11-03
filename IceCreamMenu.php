@@ -54,7 +54,7 @@
 		</div>	
 
 		<!-- about section starts-->
-		<div class="jumbotron" id="about">
+		<div class="jumbotron" id="about" style="background-color: lavenderblush;">
 			<h2 ><mark>About</mark></h2>
 			<p>Ice cream (derived from earlier iced cream or cream ice) is a sweetened frozen food typically eaten as a snack or dessert. 
 			It is usually made from dairy products, such as milk and cream, and often combined with fruits or other ingredients and flavors. 
@@ -395,7 +395,7 @@
 				<div class="col-sm-6">
 					<img src="iceshop.png" width="100%">
 				</div>
-				
+
 				
 			
 			</div>
