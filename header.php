@@ -100,7 +100,15 @@
 			        <li><a href="#contact">CONTACT</a></li>
 			        <li><a href="#user"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="#cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-			        <li><a href="#search"><input type="text" class="form-control" placeholder="Search..." id="input" onkeyup="myFunction()"></a></li> 
+
+			       <li> <form class="form-inline">
+			        	<input type="search" class="form-control mr-sm-2" placeholder="Search" arial-label="Search">
+			        	<button class="btn btn-dark" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+			        </form></li>
+
+
+			        <!--<li><a href="#search"><input type="text" class="form-control" placeholder="Search..." id="input" onkeyup="myFunction()"></a></li> -->
+
 			       
 			    </ul>
 		   	</div>

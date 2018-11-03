@@ -48,7 +48,7 @@
 		<img id="pic" src="header-scoops.png" width="100%">
 
 		<!-- name of the store-->
-		<div class="jumbotron" style="background-color: #D4F5C5;">
+		<div class="jumbotron" style="background-color: lavender">
 
 			<h1>I scream</h1>	
 		</div>	
@@ -83,7 +83,7 @@
 
 						<!-- declare card -->
 						<div class="card sm-6 box-shadow">
-							<a target="_self" href="bananaNstraw.php">
+							
 
 							<!-- img at the top of the card-->
 							<img class="card-imag-top" src="bananaNstraw.png">
@@ -91,14 +91,15 @@
 							<!-- start the card body-->
 							<div class="card-body">
 
-								<h3 class="card-title">Strawberry and Banana</h3>
+								<h3 class="card-title">Strawberry and Banana <span class="badge badge-pill badge-danger"style="background-color: red;">NEW</span></h3>
 
 								<p class="card-text">details</p>
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light" role="button" style="background-color: orange;">Order</a>
 
 								<br>
 								<br>
-							</a>
+							
 
 							</div><!-- end card body-->
 						</div><!-- end card-->							
@@ -123,7 +124,9 @@
 
 								<p class="card-text">details</p>
 
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<!-- <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button> -->
+
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -150,7 +153,9 @@
 
 								<p class="card-text">details</p>
 
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
+
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -173,11 +178,14 @@
 							<!-- start the card body-->
 							<div class="card-body">
 
-								<h3 class="card-title">Cookies and cream</h3>
+								<h3 class="card-title">Cookies and cream <span class="badge badge-pill badge-danger"style="background-color: red;">TOP</span></h3>
 
 								<p class="card-text">details</p>
 
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
+
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+
 								<br>
 								<br>
 									
@@ -204,7 +212,9 @@
 
 								<p class="card-text">details</p>
 
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<!-- <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
+
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -231,7 +241,9 @@
 
 								<p class="card-text">details</p>
 
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
+
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -258,7 +270,9 @@
 
 								<p class="card-text">details</p>
 
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
+
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -286,7 +300,9 @@
 
 								<p class="card-text">details</p>
 
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
+
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -309,11 +325,13 @@
 							<!-- start the card body-->
 							<div class="card-body">
 
-								<h3 class="card-title">Vanilla</h3>
+								<h3 class="card-title">Vanilla <span class="badge badge-pill badge-danger"style="background-color: red;">TOP</span></h3>
 
 								<p class="card-text">details</p>
 
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
+
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -341,7 +359,9 @@
 
 								<p class="card-text">details</p>
 
-								<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>
+								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
+
+								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -356,6 +376,18 @@
 			</ul><!--end class-row-text-->
 					
 		</div><!-- end scoop-->
+
+
+
+		<div class="jumbotron" id="contact" style="background-color: darkseagreen">
+		<!--background-color: #D4F5C5;" >-->
+			
+		</div><!--contact-->
+
+
+
+
+
 	</div><!-- end home-->
 
 <script type="text/javascript">

@@ -5,7 +5,9 @@
 
 body
 {
+    height: 100%;
     font-family: "Courier New";
+    
 }
 mark
 {
@@ -56,8 +58,3 @@ mark
 }
 
 
-
-.nounder
-{
-    text-decoration: none !important;
-}
