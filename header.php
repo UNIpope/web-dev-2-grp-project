@@ -99,7 +99,7 @@
 			        <li><a href="#scoop">SCOOP</a></li>
 			        <li><a href="#contact">CONTACT</a></li>
 			        <li><a href="#user"><span class="glyphicon glyphicon-user"></span></a></li>
-			        <li><a href="#cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+			        <li><a href="IceCreamCart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
 
 			       <li> <form class="form-inline">
 			        	<input type="search" class="form-control mr-sm-2" placeholder="Search" arial-label="Search">
