@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>BananaNStrawberry</title>
+	<title>Strawberry Cheesecake</title>
 
 
 	<meta charset="utf-8"> 
@@ -29,13 +29,18 @@
 		{
 		    height: 100%;
 		    font-family: "Courier New";
-		    background-color: #ffffb3; /*lightyellow*/
+		    background-color: #d4a677;  /*brown*/
 
 
 		}
 		.jumbotron
 		{
-			background-color: lavenderblush;
+			background-color: #ffcccc; /*pink*/
+		}
+
+		.alert
+		{
+			display: none;
 		}
 	</style>
 
@@ -50,17 +55,17 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<br><br>
-					<img src="BananaNStraw.png">
+					<img src="strwcheesecake.png">
 				</div>
 
 				<div class="col-sm-6">
 					<div class="jumbotron">
-						<h3>Banana and Strawberry  <span class="badge badge-pill badge-danger"style="background-color: red;">NEW</span></h3>
+						<h3>Strawberry Cheesecake</h3>
 
 						<!-- start form leads to icecreammenudata.php-->
-						<form class="form-horizontal" method="post" action="IceCreamMenuData.php">
+						<form id="formfield" class="form-horizontal" method="post" action="IceCreamMenuData.php">
 							<!-- assign the name to name -->
-							<input type="hidden" name="name" value="Banana and Strawberry">
+							<input type="hidden" name="name" value="strwcheesecake">
 							
 
 							<div class="form-group">
@@ -96,8 +101,36 @@
 
 								<!--submission button-->
 								<div style="float: right;">
-									<button type="submit" class="btn btn-default">ORDER</button>
-								</div>
+									<button id="btnsub" type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">ORDER</button>
+
+									<!-- Modal -->
+									<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									  <div class="modal-dialog modal-dialog-centered" role="document">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									          <span aria-hidden="true">&times;</span>
+									        </button>
+									      </div>
+									      <div class="modal-body">
+									        ...
+									      </div>
+									      <div class="modal-footer">
+									        <button id="submit" type="submit" class="btn btn-secondary" ><!--data-dismiss="modal">-->Close</button>
+
+									      </div>
+									    </div>
+									  </div>
+									</div>
+
+
+
+								</div><!-- end float right-->
+							
+
+
+
 								
 							</div><!--end form group-->
 						</form>
@@ -108,13 +141,12 @@
 	</div><!--end container-->
 
 
+
 	<script type="text/javascript">
-		
 		$('#submit').click(function()
 		{
     		$('#formfield').submit();
 		});
-	
 	</script>
 </body>
 </html>

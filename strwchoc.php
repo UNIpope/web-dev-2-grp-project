@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>BananaNStrawberry</title>
+	<title>Strawberry Chocolate</title>
 
 
 	<meta charset="utf-8"> 
@@ -29,13 +29,13 @@
 		{
 		    height: 100%;
 		    font-family: "Courier New";
-		    background-color: #ffffb3; /*lightyellow*/
+		    background-color: #3a2612;  /*brown*/
 
 
 		}
 		.jumbotron
 		{
-			background-color: lavenderblush;
+			background-color: #ffcccc; /*pink*/
 		}
 	</style>
 
@@ -50,17 +50,17 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<br><br>
-					<img src="BananaNStraw.png">
+					<img src="strwchoc.png">
 				</div>
 
 				<div class="col-sm-6">
 					<div class="jumbotron">
-						<h3>Banana and Strawberry  <span class="badge badge-pill badge-danger"style="background-color: red;">NEW</span></h3>
+						<h3>Strawberry Chocolate</h3>
 
 						<!-- start form leads to icecreammenudata.php-->
 						<form class="form-horizontal" method="post" action="IceCreamMenuData.php">
 							<!-- assign the name to name -->
-							<input type="hidden" name="name" value="Banana and Strawberry">
+							<input type="hidden" name="name" value="strwchoc">
 							
 
 							<div class="form-group">
@@ -106,15 +106,5 @@
 			</div><!--end row-->	
 		</div><!-- end jum-->
 	</div><!--end container-->
-
-
-	<script type="text/javascript">
-		
-		$('#submit').click(function()
-		{
-    		$('#formfield').submit();
-		});
-	
-	</script>
 </body>
 </html>

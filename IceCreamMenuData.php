@@ -1,8 +1,11 @@
-<!--
-	author : Buchita Gitchamnan+Jack
-	Assignment topic : ICe cream
-
+<!-- 
+	Website: Ice Cream Store
+	Purpose: Display the menu of the shop
+	Authors: Jack Duggan + Buchita Gitchamnan	
+	Reference: www.w3schools.com
 -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,16 +27,24 @@
 		$name = $_POST["name"];
 		$price = 5;
 		$quantity = $_POST["quantity"];
+		$op = $_POST["message"];
+
+
 
 		//inserting in the table
-		$sql = "INSERT INTO ice_cream(name, price, qty) VALUES ('$name','$price','$quantity')";
+		$sql = "INSERT INTO ice_cream(name, price, qty, op_msg) VALUES ('$name','$price','$quantity', '$op')";
+
+		
 
 		//put data in the table
 		if (!mysqli_query($con, $sql))
 		{
 			die('Error: '. mysqli_error($con));
-		}else
+		}
+		else
 		{
+	
+			
 			header("Location: IceCreamMenu.php");
 		}
 		

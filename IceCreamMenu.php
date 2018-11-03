@@ -126,7 +126,7 @@
 
 								<!-- <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button> -->
 
-								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+								<a target="_self" href="bubblegum.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -155,7 +155,7 @@
 
 								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
-								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+								<a target="_self" href="chocchip.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -184,7 +184,7 @@
 
 								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
-								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+								<a target="_self" href="cookiesNcream.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 
 								<br>
 								<br>
@@ -197,7 +197,7 @@
 
 					<!-- 5-->
 					<!-- set the menu to be half ie 6-->
-					<div class="col-sm-6" style="background-color: #AAF1AC;">
+					<div class="col-sm-6" style="background-color: #afd1a7;">
 
 						<!-- declare card -->
 						<div class="card sm-6 box-shadow">
@@ -214,7 +214,7 @@
 
 								<!-- <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
-								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+								<a target="_self" href="darkchoc.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -243,7 +243,7 @@
 
 								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
-								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+								<a target="_self" href="macha.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -266,13 +266,13 @@
 							<!-- start the card body-->
 							<div class="card-body">
 
-								<h3 class="card-title">Strawberry</h3>
+								<h3 class="card-title">Very Strawberry</h3>
 
 								<p class="card-text">details</p>
 
 								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
-								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+								<a target="_self" href="strw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -302,7 +302,7 @@
 
 								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
-								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+								<a target="_self" href="strwcheesecake.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -331,7 +331,7 @@
 
 								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
-								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+								<a target="_self" href="vanilla.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -361,7 +361,7 @@
 
 								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
-								<a target="_self" href="bananaNstraw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
+								<a target="_self" href="strwchoc.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
 								<br>
 									
@@ -377,10 +377,28 @@
 					
 		</div><!-- end scoop-->
 
+		<br><br>
 
-
-		<div class="jumbotron" id="contact" style="background-color: darkseagreen">
+		<div class="jumbotron" id="contact" style="background-color: lavender;">
 		<!--background-color: #D4F5C5;" >-->
+			<h2 ><mark>Contact</mark></h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<p>blahhhhhhhhhhhhh</p>
+					<p>blahhhhhhhhhhhhhhh</p>
+					<p>blahhhhhhhhhhhhhhh</p>
+					<p>blahhhhhhhhhhhhhhh</p>
+					<p>blahhhhhhhhhhhhhhh</p>
+					<p>blahhhhhhhhhhhhhhh</p>
+				</div>
+
+				<div class="col-sm-6">
+					<img src="iceshop.png" width="100%">
+				</div>
+				
+				
+			
+			</div>
 			
 		</div><!--contact-->
 
