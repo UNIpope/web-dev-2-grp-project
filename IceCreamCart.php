@@ -30,7 +30,7 @@
 </head>
 <body>
 <div class="container">
-
+	<h1 style="text-align: center;">CHECKOUT</h1>
 
 	<?php
 		
@@ -54,6 +54,7 @@
 						<th scope="col">Name</th>
 						<th scope="col">Quantity</th>
 						<th scope="col">Total</th>
+						<th scope="col">Instructions</th>
 
 					</tr>
 				</thead>
@@ -72,12 +73,17 @@
 			{ 
 				$name = $row["name"].".png";
 				$totalprice =0;
+				$totalprice = $totalprice+($row["price"]*$row["qty"]);
+				$sum = $sum+$totalprice;
 				?>
 
 				<tbody>
 					<tr>
-						<th><img src="<?php echo $name?>" style="width: 40%; height: auto;" ></th>
+						<th><img src="<?php echo $name?>" style="width: 10%; height: auto;" ></th>
 						<th><?php echo $row["name"]?></th>
+						<th><?php echo $row["qty"]?></th>
+						<th><?php echo $totalprice ?></th>
+						<th><?php echo $row["op_msg"]?></th>
 					</tr>
 				</tbody>
 
@@ -85,15 +91,14 @@
 
 
 				
-				$totalprice = $totalprice+($row["price"]*$row["qty"]);
-				$sum = $sum+$totalprice;
+				
 			}
 
 			?>
 			</table>
 			</div><!--table responsive -->
 			<?php
-			echo "totalprice: ".$sum;
+			echo "Totalprice: ".$sum;
 
 		}
 		

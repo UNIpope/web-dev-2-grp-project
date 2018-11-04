@@ -50,7 +50,7 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<br><br>
-					<img src="macha.png">
+					<img src="matcha.png">
 				</div>
 
 				<div class="col-sm-6">
@@ -60,7 +60,7 @@
 						<!-- start form leads to icecreammenudata.php-->
 						<form class="form-horizontal" method="post" action="IceCreamMenuData.php">
 							<!-- assign the name to name -->
-							<input type="hidden" name="name" value="Matcha">
+							<input type="hidden" name="name" value="matcha">
 							
 
 							<div class="form-group">

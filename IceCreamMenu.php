@@ -228,7 +228,7 @@
 						<div class="card sm-6 box-shadow">
 
 							<!-- img at the top of the card-->
-							<img class="card-imag-top" src="macha.png">
+							<img class="card-imag-top" src="matcha.png">
 							
 							<!-- start the card body-->
 							<div class="card-body">
