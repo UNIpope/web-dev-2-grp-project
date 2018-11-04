@@ -60,7 +60,7 @@
 						<!-- start form leads to icecreammenudata.php-->
 						<form class="form-horizontal" method="post" action="IceCreamMenuData.php">
 							<!-- assign the name to name -->
-							<input type="hidden" name="name" value="Bubble Gum">
+							<input type="hidden" name="name" value="bubblegum">
 							
 
 							<div class="form-group">

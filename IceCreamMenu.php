@@ -29,10 +29,6 @@
 
 
 
-
-	
-
-
 </head>
 
 <!-- for scrolling and the navbar is keeping track-->
