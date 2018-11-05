@@ -94,10 +94,10 @@
 	 		<div class="collapse navbar-collapse" id="mynavbar">
 			  
 			    <ul class="nav navbar-nav navbar-right">
-			    	<li><a href="#home">HOME</a></li>
-			        <li><a href="#about">ABOUT</a></li>
-			        <li><a href="#scoop">SCOOP</a></li>
-			        <li><a href="#contact">CONTACT</a></li>
+			    	<li><a href="IceCreamMenu.php#home">HOME</a></li>
+			        <li><a href="IceCreamMenu.php#about">ABOUT</a></li>
+			        <li><a href="IceCreamMenu.php#scoop">SCOOP</a></li>
+			        <li><a href="IceCreamMenu.php#contact">CONTACT</a></li>
 			        <li><a href="regLogin.php"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="IceCreamCart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
 
