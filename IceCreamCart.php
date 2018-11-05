@@ -29,20 +29,29 @@
 
 </head>
 <body>
-<div class="container">
-	<h1 style="text-align: center;">CHECKOUT</h1>
-
 	<?php
-		
-		//create a connect to the database
-		$con = mysqli_connect("localhost", "root", "","ice_cream_db");
+		//navbar
+		require('header.php');
+	?>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<div class="container">
+		<h1 style="text-align: center;">CHECKOUT</h1>
 
-		//check connection
-		if (mysqli_connect_errno())
-		{
-			#fail to connects
-			echo "failed to connect".mysqli_connect_errno();
-		}
+		<?php
+		
+			//create a connect to the database
+			$con = mysqli_connect("localhost", "root", "","ice_cream_db");
+
+			//check connection
+			if (mysqli_connect_errno())
+			{
+				#fail to connects
+				echo "failed to connect".mysqli_connect_errno();
+			}
 
 		?>
 
