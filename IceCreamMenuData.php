@@ -32,7 +32,7 @@
 
 
 		//inserting in the table
-		$sql = "INSERT INTO ice_cream(name, price, qty, op_msg) VALUES ('$name','$price','$quantity', '$op')";
+		$sql = "INSERT INTO basket(name, price, qty, op_msg) VALUES ('$name','$price','$quantity', '$op')";
 
 		
 

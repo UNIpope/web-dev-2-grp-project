@@ -32,11 +32,12 @@
 </head>
 
 <!-- for scrolling and the navbar is keeping track-->
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<?php
 		//navbar
 		require('header.php');
 	?>
+	<br><br>
 
 	<!-- add banner-->
 	<div class="container" id="home" > 

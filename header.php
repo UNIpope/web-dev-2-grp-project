@@ -29,7 +29,6 @@
 		body
 		{
     		font-family: "Courier New";
-
 		}
 		.navbar
 		{
@@ -39,15 +38,12 @@
 		    border: 0;
 		    font-size: 16px !important;
 		    letter-spacing: 4px;
-
 		}
 		.navbar li a, .navbar .navbar-brand
 		{
 		    /*change colour of the text*/
 		    color: #fff !important;
 		}
-
-
 		.navbar-nav li a:hover, .navbar-nav li.active a
 		{
 		    /*hovering = letters change to pink*/
@@ -55,14 +51,11 @@
 		    /*when hovering over  background turns white*/
 		    background-color: #fff !important;
 		}
-
-
 		.navbar-default .navbar-toggle
 		{
 		    border-color: transparent;
 		    color: #fff !important;
 		}
-
 	</style>
 
 
@@ -94,11 +87,11 @@
 	 		<div class="collapse navbar-collapse" id="mynavbar">
 			  
 			    <ul class="nav navbar-nav navbar-right">
-			    	<li><a href="IceCreamMenu.php#home">HOME</a></li>
-			        <li><a href="IceCreamMenu.php#about">ABOUT</a></li>
-			        <li><a href="IceCreamMenu.php#scoop">SCOOP</a></li>
-			        <li><a href="IceCreamMenu.php#contact">CONTACT</a></li>
-			        <li><a href="regLogin.php"><span class="glyphicon glyphicon-user"></span></a></li>
+			    	<li><a href="#home">HOME</a></li>
+			        <li><a href="#about">ABOUT</a></li>
+			        <li><a href="#scoop">SCOOP</a></li>
+			        <li><a href="#contact">CONTACT</a></li>
+			        <li><a href="login.php"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="IceCreamCart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
 
 			       <li> <form class="form-inline">

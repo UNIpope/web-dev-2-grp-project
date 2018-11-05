@@ -40,7 +40,7 @@ browser:Firefox
 				//update session and return to main pg
 				$_SESSION['name'] = $_POST[username];
 				$_SESSION['success'] = "You are now logged in";
-				header('location: index.php');
+				header('location: IceCreamMenu.php');
 			}
 		}
 		else
@@ -70,7 +70,7 @@ browser:Firefox
 					//match log user in
 					$_SESSION['username'] = $_POST['username'];
 					$_SESSION['success'] = "You are now logged in";
-					header('location: index.php');
+					header('location: IceCreamMenu.php');
 				}else {
 					printf("the username and password do not match");
 				}//end count

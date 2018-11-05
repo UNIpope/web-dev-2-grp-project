@@ -29,29 +29,20 @@
 
 </head>
 <body>
+<div class="container">
+	<h1 style="text-align: center;">CHECKOUT</h1>
+
 	<?php
-		//navbar
-		require('header.php');
-	?>
-	<br>
-	<br>
-	<br>
-	<br>
-	
-	<div class="container">
-		<h1 style="text-align: center;">CHECKOUT</h1>
-
-		<?php
 		
-			//create a connect to the database
-			$con = mysqli_connect("localhost", "root", "","ice_cream_db");
+		//create a connect to the database
+		$con = mysqli_connect("localhost", "root", "","ice_cream_db");
 
-			//check connection
-			if (mysqli_connect_errno())
-			{
-				#fail to connects
-				echo "failed to connect".mysqli_connect_errno();
-			}
+		//check connection
+		if (mysqli_connect_errno())
+		{
+			#fail to connects
+			echo "failed to connect".mysqli_connect_errno();
+		}
 
 		?>
 
@@ -70,7 +61,7 @@
 
 		<?php
 
-		$all = "SELECT name, price, qty, op_msg FROM ice_cream";
+		$all = "SELECT name, price, qty, op_msg FROM basket";
 		$re = mysqli_query($con, $all);
 		$sum = 0;
 
