@@ -2,7 +2,7 @@
 	Website: Ice Cream Store
 	Purpose: Display the menu of the shop
 	Authors: Jack Duggan + Buchita Gitchamnan	
-	Reference: www.w3schools.com
+	Reference: www.w3schools.com, getbootstrap.com
 -->
 
 
@@ -56,14 +56,14 @@
 				<!--form starts-->
 				<div class="panel-body">
 					<br>
-					<form method="post" action="#">
+					<form method="post" action="serve.php" >
 						<!-- using row to put everything on a line-->
 						<div class="form-group row">
 							<!--col-sm-... enables the text to be on the same line as a input box-->
 							<label for="usernameinput" class="col-sm-2 col-form-label"><h5>Username: </h5></label>
 
 							<div class="col-sm-10">
-								<input type="text" class="form-control" name="name" placeholder="Please Enter Username">
+								<input type="text" class="form-control" name="username" placeholder="Enter Username">
 
 							</div><!--col sm 10 input-->
 							
@@ -74,14 +74,14 @@
 							<label for="passwordinput" class="col-sm-2"><h5>Password: </h5></label>
 
 							<div class="col-sm-10">
-								<input type="password" name="password" class="form-control" placeholder="Please Enter Password">
+								<input type="password" name="password" class="form-control" placeholder="Enter Password">
 							</div><!--col sm 10-->
 							
 						</div><!--- form group row-->
 						<br>
 						<div class="col-sm-3" style="float: right;">
-
-							<input type="submit" name="submit" class="btn btn-secondary btn-lg btn-block" value="Login">
+							<button type="submit" name="login_user" class="btn btn-secondary btn-lg btn-block">Login</button>
+							
 
 						</div>
 		

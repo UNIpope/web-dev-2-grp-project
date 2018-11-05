@@ -27,7 +27,7 @@ browser:Firefox
 		if ($_POST['password_1'] == $_POST['password_2']) {	
 		
 			//insert query
-			$query = "INSERT INTO user (name, email, Password) 
+			$query = "INSERT INTO user(name, email, password) 
 			VALUES
 			('$_POST[name]','$_POST[email]', '$_POST[password_1]')";
 			
