@@ -13,7 +13,7 @@ browser:Firefox
 	session_start();
 	$_SESSION['success'] = "";
 	// connect to database
-	$db = mysqli_connect('localhost', 'root', '', 'icecream_db');
+	$db = mysqli_connect('localhost', 'root', '', 'ice_cream_db');
 	
 	//check con
 	if(mysqli_connect_errno())
@@ -27,9 +27,9 @@ browser:Firefox
 		if ($_POST['password_1'] == $_POST['password_2']) {	
 		
 			//insert query
-			$query = "INSERT INTO user (username, email, Password) 
+			$query = "INSERT INTO user (name, email, Password) 
 			VALUES
-			('$_POST[username]','$_POST[email]', '$_POST[password_1]')";
+			('$_POST[name]','$_POST[email]', '$_POST[password_1]')";
 			
 			//run query and check
 			if (!mysqli_query($db,$query))
@@ -38,7 +38,7 @@ browser:Firefox
 			}
 			else{
 				//update session and return to main pg
-				$_SESSION['username'] = $_POST[username];
+				$_SESSION['name'] = $_POST[username];
 				$_SESSION['success'] = "You are now logged in";
 				header('location: index.php');
 			}

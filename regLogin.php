@@ -63,7 +63,7 @@
 			<form method="post">
 
 				<label>Username</label>
-				<input type="text" name="username" required/>
+				<input type="text" name="name" required/>
 
 				<br>
 
