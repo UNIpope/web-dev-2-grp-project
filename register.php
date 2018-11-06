@@ -90,6 +90,10 @@
 							
 
 						</form>
+						<br>
+						<div> 
+							<a href="IceCreamMenu.php">Back</a>
+						</div>
 					</div><!--panel body-->
 				</div><!--panel heading-->
 			</div><!-- panel-->
