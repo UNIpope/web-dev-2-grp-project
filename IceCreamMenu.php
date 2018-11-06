@@ -32,7 +32,7 @@
 </head>
 
 <!-- for scrolling and the navbar is keeping track-->
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body >
 	<?php
 		//navbar
 		require('header.php');

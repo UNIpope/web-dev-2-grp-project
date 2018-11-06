@@ -22,10 +22,11 @@ browser:Firefox
 	}
 
 	// REGISTER USER
-	if (isset($_POST['reg_user'])) {
+	if (isset($_POST['reg'])) {
 		// register user or error 
 		if ($_POST['password_1'] == $_POST['password_2']) {	
 		
+			
 			//insert query
 			$query = "INSERT INTO user(name, email, password) 
 			VALUES
