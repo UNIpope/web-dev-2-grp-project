@@ -58,27 +58,28 @@
 		}
 	</style>
 
+		
+	
+
 
 </head>
 
 
 <!-- for scrolling and the navbar is keeping track-->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-
-	<!-- navbar, set the default navbar with fixed position at the top-->
+<!--navbar, set the default navbar with fixed position at the top-->
 	<nav class="navbar navbar-default navbar-fixed-top">
 	 	<div class="container-fluid">
 
 
-	 		<!-- phone button -->
+	 		<!-- small button -->
 	 		<div class="navbar-header">
-	 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="mynavbar">
+	 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
 	 				<span class="icon-bar"></span>
 	 				<span class="icon-bar"></span>
 	 				<span class="icon-bar"></span>
 	 			</button>
-	 			<a class="navbar-brand" href="#">
+	 			<a class="navbar-brand" href="#">CONEction</a>
 	 			
 	 		</div>
 
@@ -94,10 +95,19 @@
 			        <li><a href="login.php"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="IceCreamCart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
 
-			       <li> <form class="form-inline">
-			        	<input type="search" class="form-control mr-sm-2" placeholder="Search" arial-label="Search">
-			        	<button class="btn btn-dark" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-			        </form></li>
+			       	<li>
+			       		<form class="navbar-form navbar-right " action="#">
+			       			<div class="input-group">
+			        			<input type="text" class="form-control" placeholder="Search" >
+			        			<div class="input-group-btn">
+			        				<button class="btn btn-default" type="submit">
+			        					<i class="glyphicon glyphicon-search"></i>
+			        				</button>
+			        			</div>
+			        	
+			       			</div>
+			        	</form>
+			        </li>
 
 
 			        <!--<li><a href="#search"><input type="text" class="form-control" placeholder="Search..." id="input" onkeyup="myFunction()"></a></li> -->

@@ -45,26 +45,33 @@
 		}
 
 		?>
-
+		<!-- start the table-->
 		<div class="table-responsive">
 			<table class="table table-hover">
 				<thead>
 					<tr>
+						<!---defines the tittle -->
 						<th scope="col"></th>
 						<th scope="col">Name</th>
 						<th scope="col">Quantity</th>
 						<th scope="col">Total</th>
 						<th scope="col">Instructions</th>
+						<th scope="col"> </th>
 
 					</tr>
 				</thead>
 
 		<?php
-
+		//select all from the cart db that using added in
 		$all = "SELECT name, price, qty, op_msg FROM basket";
+
+		//do the query 
 		$re = mysqli_query($con, $all);
 		$sum = 0;
 
+
+
+		//if not empty
 		if (mysqli_num_rows($re) > 0) 
 		{
 
@@ -84,6 +91,7 @@
 						<th><?php echo $row["qty"]?></th>
 						<th><?php echo $totalprice ?></th>
 						<th><?php echo $row["op_msg"]?></th>
+						<th><button onclick="deleto(this)">Delete</button></th>
 					</tr>
 				</tbody>
 
@@ -101,8 +109,7 @@
 			echo "Totalprice: ".$sum;
 
 		}
-		
-		
+		//if basket is empty
 		else
 		{
 			echo "0 result";

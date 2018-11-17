@@ -37,7 +37,7 @@
 		//navbar
 		require('header.php');
 	?>
-	<br><br>
+	
 
 	<!-- add banner-->
 	<div class="container" id="home" > 
