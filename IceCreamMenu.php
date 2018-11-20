@@ -1,7 +1,7 @@
 <!-- 
 	Website: Ice Cream Store
 	Purpose: Display the menu of the shop
-	Authors: Jack Duggan + Buchita Gitchamnan	
+	Authors: Buchita Gitchamnan + Jack Duggan	
 	Reference: www.w3schools.com
 -->
 
