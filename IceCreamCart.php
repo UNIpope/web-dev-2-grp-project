@@ -30,7 +30,9 @@
 </head>
 <body>
 <div class="container">
-	<h1 style="text-align: center;">CHECKOUT</h1>
+	<div class="jumbotron" style="background-color: lightblue;">
+		<h2 style="text-align: center;">CHECKOUT</h2>
+	</div>
 
 	<?php
 		
@@ -91,7 +93,7 @@
 						<th><?php echo $row["qty"]?></th>
 						<th><?php echo $totalprice ?></th>
 						<th><?php echo $row["op_msg"]?></th>
-						<th><button onclick="deleto(this)">Delete</button></th>
+						<th><button onclick="deleto(this)"><span class="glyphicon glyphicon-trash"></span></button></th>
 					</tr>
 				</tbody>
 
@@ -105,22 +107,44 @@
 			?>
 			</table>
 			</div><!--table responsive -->
+			
+		
+
+			<div class="jumbotron" style="background-color: lavender;">
+				<h3 style="text-align: center;">Total price: <?php echo $sum;?></h3>
+
+				<a class="btn btn-dark btn-lg" href="IceCreamMenu.php" role="button" style="float: left; background-color: pink; color: black;"><span class="glyphicon glyphicon-home"></span></a>
+
+				<a class="btn btn-dark btn-lg" href="#" role="button" style="float: right; background-color: pink; color: black;">P    A     Y</a>
+
+			</div>
+
+
+			
 			<?php
-			echo "Totalprice: ".$sum;
 
 		}
 		//if basket is empty
 		else
 		{
-			echo "0 result";
+			?>
+			<div class="jumbotron">
+				<a href="IceCreamMenu.php" style="float: right;"><span class="glyphicon glyphicon-home"></span></a>
+				<br>
+				<h3>Empty Cart!</h3>
+			</div>
+			<?php
 		}
+
+
 
 		//turn of the connection
 		mysqli_close($con);
 	
 		?>
+		
 
-	
+		
 			
 		
 
