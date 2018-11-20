@@ -405,47 +405,6 @@
 
 	</div><!-- end home-->
 
-<script type="text/javascript">
-			
-			/*//search bar //not working 
-			$(document).ready(function()
-			{
-				$("#input").on("keyup",function()
-				{
-					var value = $(this).val().toLowerCase();
-					$("#myList li").filter(function()
-					{
-						$(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
-					});
-				});
-
-			});*/
-
-
-
-			function myFunction()
-			{
-				var input, filter, ul, li, i, a;
-
-				input = document.getElementById("input");
-				filter = input.value.toUpperCase();
-				ul = document.getElementById("myList");
-				li = ul.getElementByTagName("li");
-
-				for (var i = 0; i < li.length; i++) 
-				{
-					a = li[i].getElementByTagName("a")[0];
-					if (a.innerHTML.toUpperCase().indexOf(filter)>-1)
-					{
-						li[i].style.display="";
-					}
-					else
-					{
-						li[i].style.display="none";
-					}
-				}
-			}
-	</script>
 
 
 

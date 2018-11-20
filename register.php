@@ -28,7 +28,7 @@
 	<style type="text/css">
 		body
 		{
-			background-image: url("logpic4.jpg");
+			background-image: url("pink3.jpg");
 			background-repeat: no-repeat;
   			background-size: cover;
   			background-position: center;
@@ -92,7 +92,7 @@
 						</form>
 						<br>
 						<div> 
-							<a href="IceCreamMenu.php">Back</a>
+							<a href="IceCreamMenu.php"><span class="glyphicon glyphicon-home"></span></a>
 						</div>
 					</div><!--panel body-->
 				</div><!--panel heading-->

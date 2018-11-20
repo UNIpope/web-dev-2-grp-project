@@ -28,7 +28,7 @@
 	<style type="text/css">
 		body
 		{
-  			background-image: url("pink.jpg");
+  			background-image: url("pink3.jpg");
   			background-repeat: no-repeat;
   			background-size: cover;
   			background-position: center;
@@ -41,17 +41,19 @@
 </head>
 
 <body>
-<br><br><br>
+
+<br><br><br><br><br><br><br>
 	
 	<!--start the panel-->
-	<div class="container" style="width: 45%">
+	<div class="container" style="width: 45%;">
 		<!--heading login-->
 		<div class="panel-group">
 
 			<!---opacity-->
 			<div class="panel panel-dark" style="background-color: rgba(0,0,0,0.2);">
 
-				<div class="panel-heading" style="background-color: rgba(0,0,0,0.2);"><h1 style="text-align: center; color: white; ">Login</h1></div>
+				<div class="panel-heading" style="background-color: rgba(0,0,0,0.2);">
+					<h1 style="text-align: center; color: white; ">Login</h1></div>
 
 				<!--form starts-->
 				<div class="panel-body">
@@ -88,14 +90,23 @@
 						<br>
 						
 					</form><!--form-->
+					<a href="IceCreamMenu.php"><span class="glyphicon glyphicon-home"></span></a>
+
+
 
 				</div><!--panel body-->	
-				<div class="panel-footer" style=" background-color: rgba(0, 0, 0, 0.2); text-align: center;">
+
+				<div class="panel-footer" style="background-color: rgba(0, 0, 0, 0.2); text-align: center;"> 
+				
+					
+					
 					<a href="register.php" ><h5>Register?</h5></a>
+
 				</div>
 						
 			</div><!--panel info-->
 			
+
 			
 		</div><!-- panel group-->
 
