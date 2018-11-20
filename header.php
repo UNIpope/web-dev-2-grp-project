@@ -94,20 +94,8 @@
 			        <li><a href="#contact">CONTACT</a></li>
 			        <li><a href="login.php"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="IceCreamCart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-
-			       	<li>
-			       		<form class="navbar-form navbar-right " action="#">
-			       			<div class="input-group">
-			        			<input type="text" class="form-control" placeholder="Search" >
-			        			<div class="input-group-btn">
-			        				<button class="btn btn-default" type="submit">
-			        					<i class="glyphicon glyphicon-search"></i>
-			        				</button>
-			        			</div>
-			        	
-			       			</div>
-			        	</form>
-			        </li>
+			        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+			       	
 
 
 			        <!--<li><a href="#search"><input type="text" class="form-control" placeholder="Search..." id="input" onkeyup="myFunction()"></a></li> -->
