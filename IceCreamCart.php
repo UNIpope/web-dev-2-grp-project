@@ -47,7 +47,22 @@
 		}
 
 		?>
-		<!-- start the table-->
+		
+		<?php
+		//select all from the cart db that using added in
+		$all = "SELECT name, price, qty, op_msg FROM basket";
+
+		//do the query 
+		$re = mysqli_query($con, $all);
+		$sum = 0;
+
+
+
+		//if not empty
+		if (mysqli_num_rows($re) > 0) 
+		{
+			?>
+			<!-- start the table-->
 		<div class="table-responsive">
 			<table class="table table-hover">
 				<thead>
@@ -63,21 +78,8 @@
 					</tr>
 				</thead>
 
-		<?php
-		//select all from the cart db that using added in
-		$all = "SELECT name, price, qty, op_msg FROM basket";
 
-		//do the query 
-		$re = mysqli_query($con, $all);
-		$sum = 0;
-
-
-
-		//if not empty
-		if (mysqli_num_rows($re) > 0) 
-		{
-
-			
+			<?php
 			while ($row = mysqli_fetch_assoc($re)) 
 			{ 
 				$name = $row["name"].".png";
