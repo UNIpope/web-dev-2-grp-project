@@ -26,13 +26,44 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
+	<script> 
+		//the animation to show the progress
+		$(document).ready(function(){
+		    $("button").click(function(){
+		        $("div").animate({left: '750px'}, "slow");
+
+		        //wait til the animate is done
+		         $("div").promise().done(function()
+		        {
+		        	//link to another page
+		        	window.location.href = "pay.php";
+		        });
+        
+		    });
+		});
+	</script> 
+
+
 
 </head>
 <body>
 <div class="container">
+	<?php
+		//navbar
+		require('header2.php');
+	?>
+	<br><br><br>
+
+
 	<div class="jumbotron" style="background-color: lightblue;">
 		<h2 style="text-align: center;">CHECKOUT</h2>
 	</div>
+
+	
+	<div style="position:absolute;"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+
+	<br><br><br><br><br>
+
 
 	<?php
 		
@@ -46,9 +77,7 @@
 			echo "failed to connect".mysqli_connect_errno();
 		}
 
-		?>
 		
-		<?php
 		//select all from the cart db that using added in
 		$all = "SELECT name, price, qty, op_msg FROM basket";
 
@@ -115,9 +144,11 @@
 			<div class="jumbotron" style="background-color: lavender;">
 				<h3 style="text-align: center;">Total price: <?php echo $sum;?></h3>
 
-				<a class="btn btn-dark btn-lg" href="IceCreamMenu.php" role="button" style="float: left; background-color: pink; color: black;"><span class="glyphicon glyphicon-home"></span></a>
+			
 
-				<a class="btn btn-dark btn-lg" href="#" role="button" style="float: right; background-color: pink; color: black;">P    A     Y</a>
+				<button class="btn btn-dark btn-lg" style="float: right; background-color: pink; color: black;">P    A     Y</button>
+
+
 
 			</div>
 

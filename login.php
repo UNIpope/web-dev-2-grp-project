@@ -10,6 +10,14 @@
 <html>
 <head>
 	<title>Login</title>
+	<?php 
+	//check if logged in
+		session_start();
+		if(isset($_SESSION['login_user']))
+		{
+			header("location: user.php");
+		}
+	?>
 
 
 	<meta charset="utf-8"> 

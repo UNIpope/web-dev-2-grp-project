@@ -4,28 +4,21 @@
 	Authors: Jack Duggan + Buchita Gitchamnan	
 	reference: www.w3schools.com
 -->
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<title>Header</title>
-
-
-	<meta charset="utf-8"> 
-
-	<!-- rsponsive-->
+ 	<meta charset="utf-8"> 
+ 	<!-- rsponsive-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- include CDN(Content Delivery Network) MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery-->
+ 	<!-- include CDN(Content Delivery Network) MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-	<style type="text/css">
+ 	<style type="text/css">
 		body
 		{
     		font-family: "Courier New";
@@ -57,15 +50,10 @@
 		    color: #fff !important;
 		}
 	</style>
-
-		
+ 		
 	
-
-
-</head>
-
-
-<!-- for scrolling and the navbar is keeping track-->
+ </head>
+ <!-- for scrolling and the navbar is keeping track-->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!--navbar, set the default navbar with fixed position at the top-->
 	<div class="collapse navbar-collapse" id="mynavbar">
@@ -76,14 +64,11 @@
 	
 		<nav class="navbar navbar-default navbar-fixed-top">
 	 	<div class="container-fluid">
-
-
-	 		<!-- title -->
+ 	 		<!-- title -->
 	 		<div class="navbar-header">
 	 			<a class="navbar-brand" href="#">CONEction</a>
 	 		</div>
-
-	 		<!-- home -->
+ 	 		<!-- home -->
 	 		<div class="collapse navbar-collapse" id="mynavbar">
 			    <ul class="nav navbar-nav navbar-right">
 			        <li><a href="IceCreamMenu.php" style="float: right;"><span class="glyphicon glyphicon-home"></span></a></li>
@@ -91,8 +76,6 @@
 		   	</div>
 	  	</div>
 	</nav>
-
-	
-
-</body>
-</html>
+ 	
+ </body>
+</html> 

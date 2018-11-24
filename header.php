@@ -94,7 +94,7 @@
 			        <li><a href="#contact">CONTACT</a></li>
 			        <li><a href="login.php"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="IceCreamCart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+			        <li><a href="Search.php"><span class="glyphicon glyphicon-search"></span></a></li>
 			       	
 
 
