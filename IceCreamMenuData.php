@@ -25,7 +25,7 @@
 
 		#variable
 		$name = $_POST["name"];
-		$price = 5;
+		$price = $_POST["price"];
 		$quantity = $_POST["quantity"];
 		$op = $_POST["message"];
 
