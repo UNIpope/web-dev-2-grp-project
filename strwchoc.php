@@ -39,6 +39,16 @@
 		}
 	</style>
 
+
+	
+	<script>
+		function goBack() 
+		{
+	   	
+	   		window.history.back();
+		}
+	</script>
+
 </head>
 
 
@@ -51,6 +61,8 @@
 				<div class="col-sm-6">
 					<br><br>
 					<img src="strwchoc.png">
+					<br><br><br>
+					<button type="button" onclick="goBack()" class="btn btn-default"><span class="glyphicon glyphicon-arrow-left"></span></button>
 				</div>
 
 				<div class="col-sm-6">
@@ -64,7 +76,8 @@
 							
 
 							<div class="form-group">
-								<label class="control-label col-sm-2" for="price">Price:&euro;5 </label>
+								<label class="control-label col-sm-2" for="price">Price:&euro;2.20 </label>
+								<input type="hidden" name="price" value="2.20">
 							</div>
 
 						
@@ -83,6 +96,7 @@
 										<option value="7">7</option>
 										<option value="8">8</option>
 										<option value="9">9</option>
+										<option value="10">10</option>
 									</select>
 								</div><!-- end col-sm-10-->
 								<br><br><br><br>

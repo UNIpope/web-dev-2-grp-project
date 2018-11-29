@@ -25,13 +25,8 @@
 	<!-- rsponsive-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- include CDN(Content Delivery Network) MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery-->
-	<!-- Latest compiled and minified CSS -->
+	<!--bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<style type="text/css">
 		body
@@ -61,7 +56,7 @@
 			<div class="panel panel-dark" style="background-color: rgba(0,0,0,0.2);">
 
 				<div class="panel-heading" style="background-color: rgba(0,0,0,0.2);">
-					<h1 style="text-align: center; color: white; ">Login</h1></div>
+					<h1 style="text-align: center; color: #F2E7EC; ">Login</h1></div>
 
 				<!--form starts-->
 				<div class="panel-body">
@@ -73,7 +68,7 @@
 							<label for="usernameinput" class="col-sm-2 col-form-label"><h5>Username: </h5></label>
 
 							<div class="col-sm-10">
-								<input type="text" class="form-control" name="username" placeholder="Enter Username">
+								<input type="text" class="form-control" name="username" placeholder="Enter Username" required>
 
 							</div><!--col sm 10 input-->
 							
@@ -84,13 +79,13 @@
 							<label for="passwordinput" class="col-sm-2"><h5>Password: </h5></label>
 
 							<div class="col-sm-10">
-								<input type="password" name="password" class="form-control" placeholder="Enter Password">
+								<input type="password" name="password" class="form-control" placeholder="Enter Password" required>
 							</div><!--col sm 10-->
 							
 						</div><!--- form group row-->
 						<br>
 						<div class="col-sm-3" style="float: right;">
-							<button type="submit" name="login_user" class="btn btn-secondary btn-lg btn-block">Login</button>
+							<button type="submit" name="login_user" class="btn btn-dark btn-lg btn-block" style="background-color: pink;">Login</button>
 							
 
 						</div>
@@ -98,7 +93,8 @@
 						<br>
 						
 					</form><!--form-->
-					<a href="IceCreamMenu.php"><span class="glyphicon glyphicon-home"></span></a>
+
+					<h3><a href="IceCreamMenu.php" style="color: #F2E7EC;"><span class="glyphicon glyphicon-home"></span></a></h3>
 
 
 
@@ -108,7 +104,7 @@
 				
 					
 					
-					<a href="register.php" ><h5>Register?</h5></a>
+					<a href="register.php" style="color: #F2E7EC;"><h4>Register?</h4></a>
 
 				</div>
 						

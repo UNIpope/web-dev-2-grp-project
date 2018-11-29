@@ -9,14 +9,8 @@
 	<!-- rsponsive-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- include CDN(Content Delivery Network) MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 
 
 
@@ -105,10 +99,13 @@
 	}
 
 
+	#if the password is the same with the old password
 	if ($login_password == $_POST['old_pass']) 
 	{
+		#if the new password is the same with the re entered one 
 		if ($_POST['new_pass'] == $_POST['new_pass2']) 
 		{
+			#query
 			$query = "UPDATE user SET password= $_POST[new_pass] WHERE name LIKE '$login_session' ";
 
 			//run query and check
@@ -129,6 +126,7 @@
 			}
 			
 		}
+		//if the new and re entered pass not the same
 		else
 		{
 			//triggering the modal to display a msg
@@ -141,6 +139,7 @@
 		}
 
 	}
+	//the  current pass entered not the same with the pass
 	else
 	{
 		//triggering the modal to display a msg
@@ -152,12 +151,9 @@
 
 	}
 
+	mysqli_close($db); // Closing Connection
 
 ?>
-
-
-
-
 </body>
 </html>
 

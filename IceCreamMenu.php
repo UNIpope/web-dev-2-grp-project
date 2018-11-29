@@ -90,7 +90,7 @@
 
 								<h3 class="card-title">Strawberry and Banana <span class="badge badge-pill badge-danger"style="background-color: red;">NEW</span></h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;2.10</p>
 								
 								<a target="_self" href="bananaNstraw.php" class="btn btn-light" role="button" style="background-color: orange;">Order</a>
 
@@ -119,9 +119,8 @@
 
 								<h3 class="card-title">Bubble gum</h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;1.99</p>
 
-								<!-- <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button> -->
 
 								<a target="_self" href="bubblegum.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
@@ -148,9 +147,8 @@
 
 								<h3 class="card-title">Chocolate chips</h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;2.50</p>
 
-								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
 								<a target="_self" href="chocchip.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
@@ -177,9 +175,8 @@
 
 								<h3 class="card-title">Cookies and cream <span class="badge badge-pill badge-danger"style="background-color: red;">TOP</span></h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;3.90</p>
 
-								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
 								<a target="_self" href="cookiesNcream.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 
@@ -207,9 +204,8 @@
 
 								<h3 class="card-title">Dark Chocolate</h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;1.50</p>
 
-								<!-- <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
 								<a target="_self" href="darkchoc.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
@@ -236,9 +232,8 @@
 
 								<h3 class="card-title">Matcha</h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;4.99</p>
 
-								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
 								<a target="_self" href="macha.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
@@ -265,9 +260,8 @@
 
 								<h3 class="card-title">Very Strawberry</h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;1.99</p>
 
-								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
 								<a target="_self" href="strw.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
@@ -295,9 +289,8 @@
 
 								<h3 class="card-title">Strawberry Chessecake</h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;2.99</p>
 
-								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
 								<a target="_self" href="strwcheesecake.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
@@ -324,9 +317,8 @@
 
 								<h3 class="card-title">Vanilla <span class="badge badge-pill badge-danger"style="background-color: red;">TOP</span></h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;1.00</p>
 
-								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
 								<a target="_self" href="vanilla.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>
@@ -354,9 +346,8 @@
 
 								<h3 class="card-title">Chocolate Strawberry</h3>
 
-								<p class="card-text">details</p>
+								<p class="card-text">&euro;2.20</p>
 
-								<!--<button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: orange;">Order</button>-->
 
 								<a target="_self" href="strwchoc.php" class="btn btn-light role="button" style="background-color: orange;">Order</a>
 								<br>

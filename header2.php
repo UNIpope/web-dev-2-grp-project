@@ -66,7 +66,7 @@
 	 	<div class="container-fluid">
  	 		<!-- title -->
 	 		<div class="navbar-header">
-	 			<a class="navbar-brand" href="#">CONEction</a>
+	 			<a class="navbar-brand" href="IceCreamMenu.php">CONEction</a>
 	 		</div>
  	 		<!-- home -->
 	 		<div class="collapse navbar-collapse" id="mynavbar">

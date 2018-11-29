@@ -83,24 +83,29 @@ browser:Firefox
 	}
 
 	// REGISTER USER
-	if (isset($_POST['reg'])) {
+	if (isset($_POST['reg'])) 
+	{
+
+
 		// register user or error 
-		if ($_POST['password_1'] == $_POST['password_2']) {	
+		if ($_POST['password_1'] == $_POST['password_2']) 
+		{	
 		
-			
+
 			//insert query
-			$query = "INSERT INTO user(name, email, password) 
-			VALUES
-			('$_POST[name]','$_POST[email]', '$_POST[password_1]')";
-			
+			$query = "INSERT INTO user(name, email, password, street, city, country, postcode, phone) 
+			VALUES('$_POST[name]', '$_POST[email]', '$_POST[password_1]', '$_POST[street]' , '$_POST[county]', '$_POST[country]', '$_POST[postcode]', '$_POST[phone]')";
+
+
 			//run query and check
 			if (!mysqli_query($db,$query))
 			{
 				die('Error: '. mysqli_error($db));
 			}
 			else{
+
 				//update session and return to main pg
-				$_SESSION['name'] = $_POST[username];
+				$_SESSION['login_user'] = $_POST[username];
 				
 				header('location: IceCreamMenu.php');
 			}
@@ -111,6 +116,8 @@ browser:Firefox
 		}//end if
 	}
 	
+
+
 	// LOGIN USER
 	if (isset($_POST['login_user'])) {
 		//select usernames and pass.
@@ -124,18 +131,19 @@ browser:Firefox
 		}
 		else{
 			//if there are results count no of results
-			if($results = mysqli_query($db, $query)){
+			if($results = mysqli_query($db, $query))
+			{
 				$rowcount=mysqli_num_rows($results);
 					
 				//check if there is a result
 				if ($rowcount == 1) {
 
 					//match log user in
-					$_SESSION['username'] = $_POST['username'];
 					$username = $_POST['username'];
 
 					//assigning the login user
 					$_SESSION['login_user'] = $username;
+
 					//triggering the modal to display a msg
 					echo "<script type='text/javascript'>
 							$(document).ready(function(){
@@ -159,6 +167,9 @@ browser:Firefox
 			}//end results
 		}//end if my sql query 		
 	}//end login user
+
+
+	mysqli_close($db); // Closing Connection
 ?>
 
 

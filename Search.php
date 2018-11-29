@@ -62,7 +62,7 @@
 				}
 	 			$sr = $_POST["sr"]; 
 				//select where name = sr
-				$all = "SELECT name, des, pic, price FROM ice_cream where name like '%".$sr."%'";
+				$all = "SELECT name, pic, price FROM ice_cream where name like '%".$sr."%'";
 				
 				//do the query and print 
 				$re = mysqli_query($con, $all);
@@ -71,7 +71,7 @@
 				echo "<table border='1'>
 				<tr>
 				<th>name</th>
-				<th>des</th>
+				
 				<th>price</th>
 				<th>pic</th>
 				</tr>";
@@ -80,13 +80,15 @@
 				{
 					echo "<tr>";
 					echo "<td>" . $row['name'] . "</td>";
-					echo "<td>" . $row['des'] . "</td>";
+					
 					echo "<td>" . $row['price'] . "</td>";
 					echo "<td>" . $row['pic'] . "</td>";
 					echo "</tr>";
 				}
 				echo "</table>";
 			}
+
+
 		?>
 	</div>
 	

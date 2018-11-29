@@ -109,11 +109,12 @@
 						<p>Phone number: <?php echo $login_phone;  ?></p>
 						
 						</div>
+						<a href="remove_user.php" type="button">Deactivate</a>
 					</p>
 					<div class="row">
 						<div class="col-sm-6" >
 							<h2><a href="Logout.php" style="color: black;"><span class="glyphicon glyphicon-log-out"></span></a></h2>
-			
+							
 						</div>
 						<div class="col-sm-6">
 						<h2><a href="IceCreamMenu.php" style="float: right; color: black;"><span class="glyphicon glyphicon-home"></span></a></h2>

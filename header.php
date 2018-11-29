@@ -58,7 +58,6 @@
 		}
 	</style>
 
-		
 	
 
 
@@ -79,7 +78,7 @@
 	 				<span class="icon-bar"></span>
 	 				<span class="icon-bar"></span>
 	 			</button>
-	 			<a class="navbar-brand" href="#">CONEction</a>
+	 			<a class="navbar-brand" href="IceCreamMenu.php">CONEction</a>
 	 			
 	 		</div>
 
@@ -90,7 +89,7 @@
 			    <ul class="nav navbar-nav navbar-right">
 			    	<li><a href="#home">HOME</a></li>
 			        <li><a href="#about">ABOUT</a></li>
-			        <li><a href="#scoop">SCOOP</a></li>
+			        <li><a href="#scoop">SCOOP <span class="glyphicon glyphicon-ice-lolly-tasted"></span></a></li>
 			        <li><a href="#contact">CONTACT</a></li>
 			        <li><a href="login.php"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="IceCreamCart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>

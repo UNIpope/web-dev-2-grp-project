@@ -19,10 +19,13 @@
 	<!-- include CDN(Content Delivery Network) MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	
 
 	<style type="text/css">
 		body
@@ -39,18 +42,31 @@
 		}
 	</style>
 
+
+
+	<script>
+		//function for going back to the previous page
+		function goBack() 
+		{
+	   	
+	   		window.history.back();
+		}
+	</script>
+
 </head>
 
 
 <body>
-
 	<div class="container">
 		<div class="jumbotron">
 
 			<div class="row">
 				<div class="col-sm-6">
 					<br><br>
+					<!-- pic-->
 					<img src="BananaNStraw.png">
+					<br><br><br>
+					<button type="button" onclick="goBack()" class="btn btn-default"><span class="glyphicon glyphicon-arrow-left"></span></button>
 				</div>
 
 				<div class="col-sm-6">
@@ -64,7 +80,8 @@
 							
 
 							<div class="form-group">
-								<label class="control-label col-sm-2" for="price">Price:&euro;5 </label>
+								<label class="control-label col-sm-2" >Price:&euro;2.10</label>
+								<input type="hidden" name="price" value="2.10">
 							</div>
 
 						
@@ -83,6 +100,7 @@
 										<option value="7">7</option>
 										<option value="8">8</option>
 										<option value="9">9</option>
+										<option value="10">10</option>
 									</select>
 								</div><!-- end col-sm-10-->
 								<br><br><br><br>
@@ -95,9 +113,14 @@
 								<br><br>
 
 								<!--submission button-->
-								<div style="float: right;">
+								<div  style="float: right;">
+									
 									<!-- a button to trigger modal-->
 									<button id="btnsub" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">ORDER</button>
+								</div>
+									
+
+
 
 									<!-- Modal popup -->
 									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">

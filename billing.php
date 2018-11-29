@@ -12,8 +12,6 @@
 		echo "Failed to connect to MYSQL: ". mysqli_connect_errno($db);
 	}
 
-	
-
 
 	//variables
 	$street = $_POST['street'];

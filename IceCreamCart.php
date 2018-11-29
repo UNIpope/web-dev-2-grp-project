@@ -1,8 +1,8 @@
 <!-- 
 	Website: Ice Cream Store
-	Purpose: Display the menu of the shop
+	Purpose: Display the menu of the shop, using ajax to delete an item from the basket
 	Authors: Jack Duggan + Buchita Gitchamnan	
-	Reference: www.w3schools.com
+	Reference: www.w3schools.com, stackoverflow.com
 -->
 
 
@@ -27,12 +27,18 @@
 
 
 	<script> 
+
+
+		//setInterval(requestTotal, 3000);
+
+
+
 		//the animation to show the progress
 		$(document).ready(function(){
-		    $("button").click(function(){
+		    $("#paybtn").click(function(){
 		        $("div").animate({left: '750px'}, "slow");
 
-		        //wait til the animate is done
+		        //promise() wait til the animate is done
 		         $("div").promise().done(function()
 		        {
 		        	//link to another page
@@ -41,6 +47,77 @@
         
 		    });
 		});
+
+
+		//using ajax to delete an item without reloading the page .
+		$(function()
+		{
+			//onclick the link
+		    $(document).on('click','.trash',function()
+		    {
+		    	//assigns the variables
+		        var del_id= $(this).attr('id');	//assigns the name of the ice cream to the variable.
+		        var $ele = $(this).parent().parent(); //page
+		        
+		        //declares ajax function
+		        $.ajax(
+		        {
+		            type:'POST',
+		            url:'delete_item.php',	//passes to delete_item page dealing with deleting the item from db
+		            data:{'del_id':del_id},	//passes the variable.
+		            
+		            //if its success
+		            success: function(data)
+		            {
+		            	//removes from the page
+		                if(data=="YES")
+		                {
+		                    $ele.fadeOut().remove();
+		                }
+		                else
+		                {
+		                    alert("can't delete the row")
+		                }
+		            }
+
+		            });
+		        });
+		});//ends ajax ()
+
+
+
+/*
+
+		function saveCart(obj) 
+		{
+			var quantity = $(obj).val();
+			var code = $(obj).attr("id");
+			$.ajax(
+			{
+				url: "updateitem.php",
+				type: "POST",
+				data: 'code='+code+'&quantity='+quantity,
+				success: function(data, status){$("#total_amount").html(data)},
+				error: function () {alert("Problen in sending reply!")}
+			});
+		}
+
+
+
+		//update the price
+		function requestTotal()
+		{
+			var url = "getprice.php?id='$id'";
+
+			jQuery(#sub).load(url);
+
+
+		}
+
+
+*/
+
+
 	</script> 
 
 
@@ -54,36 +131,28 @@
 	?>
 	<br><br><br>
 
-
+	<!--heading-->
 	<div class="jumbotron" style="background-color: lightblue;">
 		<h2 style="text-align: center;">CHECKOUT</h2>
 	</div>
 
-	
+	<!--displays the animate cart div-->
 	<div style="position:absolute;"><span class="glyphicon glyphicon-shopping-cart"></span></div>
 
 	<br><br><br><br><br>
 
 
 	<?php
-		
-		//create a connect to the database
-		$con = mysqli_connect("localhost", "root", "","ice_cream_db");
-
-		//check connection
-		if (mysqli_connect_errno())
-		{
-			#fail to connects
-			echo "failed to connect".mysqli_connect_errno();
-		}
+		//declares the db connection
+		require('connection.php');
 
 		
-		//select all from the cart db that using added in
+		//selects all from the cart db that using added in
 		$all = "SELECT name, price, qty, op_msg FROM basket";
 
-		//do the query 
+		//runs query 
 		$re = mysqli_query($con, $all);
-		$sum = 0;
+		$total = 0;
 
 
 
@@ -91,9 +160,11 @@
 		if (mysqli_num_rows($re) > 0) 
 		{
 			?>
-			<!-- start the table-->
+		<!-- start responsiv table-->
 		<div class="table-responsive">
+			<!--table style...when hover goes diff colour-->
 			<table class="table table-hover">
+				<!--headings of the table-->
 				<thead>
 					<tr>
 						<!---defines the tittle -->
@@ -109,51 +180,44 @@
 
 
 			<?php
+			//while there is an item in the db
 			while ($row = mysqli_fetch_assoc($re)) 
 			{ 
-				$name = $row["name"].".png";
-				$totalprice =0;
-				$totalprice = $totalprice+($row["price"]*$row["qty"]);
-				$sum = $sum+$totalprice;
+				//variables
+				$name = $row["name"].".png"; //picture
+				$subtotal =0.00;
+				$subtotal = $subtotal+($row["price"]*$row["qty"]); //price for item
+				$total = $total+$subtotal; //total of all the items 
 				?>
 
+				<!--inside the table -->
 				<tbody>
 					<tr>
 						<th><img src="<?php echo $name?>" style="width: 10%; height: auto;" ></th>
 						<th><?php echo $row["name"]?></th>
-						<th><?php echo $row["qty"]?></th>
-						<th><?php echo $totalprice ?></th>
+						<th><?php echo $row["qty"]?><!--<input type="number" name="edit_q" id="<?php //echo $row["name"];?>" min="1" max="10" class="form-control text-center quantity" value="<?php // echo $row["qty"]?>">--></th>
+						<th><div id="sub"><?php echo $subtotal ?></div></th>
 						<th><?php echo $row["op_msg"]?></th>
-						<th><button onclick="deleto(this)"><span class="glyphicon glyphicon-trash"></span></button></th>
+
+						<!--delete item using ajax passing the name of the ice cream to the function-->
+						<th><a class="trash" href="#" id="<?php echo $row["name"];?>"><span class="glyphicon glyphicon-trash"></span></a></th>
 					</tr>
 				</tbody>
 
-				<?php
-
-
-				
-				
+				<?php		
 			}
-
 			?>
 			</table>
 			</div><!--table responsive -->
 			
 		
+			<!--displays the price-->
+			<div id="total_amount" class="jumbotron" style="background-color: lavender;">
+				<h3 style="text-align: center;">Total price: &euro;<?php echo $total;?></h3>
 
-			<div class="jumbotron" style="background-color: lavender;">
-				<h3 style="text-align: center;">Total price: <?php echo $sum;?></h3>
-
-			
-
-				<button class="btn btn-dark btn-lg" style="float: right; background-color: pink; color: black;">P    A     Y</button>
-
-
-
+				<button id="paybtn" class="btn btn-dark btn-lg" style="float: right; background-color: pink; color: black;">P    A     Y</button>
 			</div>
 
-
-			
 			<?php
 
 		}
@@ -164,7 +228,7 @@
 			<div class="jumbotron">
 				<a href="IceCreamMenu.php" style="float: right;"><span class="glyphicon glyphicon-home"></span></a>
 				<br>
-				<h3>Empty Cart!</h3>
+				<h2>Empty Cart!</h2>
 			</div>
 			<?php
 		}
@@ -175,12 +239,6 @@
 		mysqli_close($con);
 	
 		?>
-		
-
-		
-			
-		
-
 
 </div><!-- container-->
 </body>
