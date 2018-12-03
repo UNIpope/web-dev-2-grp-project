@@ -1,9 +1,12 @@
 <!-- 
 	Website: Ice Cream Store
-	Purpose: Display the menu of the shop
+	Purpose: Form for address or use the address that stores in DB
 	Authors: Jack Duggan + Buchita Gitchamnan	
-	Reference: www.w3schools.com
+	Reference: www.w3schools.com, https://getbootstrap.com/
+
+	Link from: pay.php
 -->
+
 
 <!DOCTYPE html>
 <html>
@@ -93,7 +96,7 @@
 							
 						</div>
 					</p>
-					<h5><a href="deliver.php" style="color: pink;">USE THIS ADDRESS</a></h5>
+					<h5><a href="deliver.php" style="color: #B38989;">USE THIS ADDRESS <span class="glyphicon glyphicon-pushpin"></span></a></h5>
 				</div>
 			</div>
 

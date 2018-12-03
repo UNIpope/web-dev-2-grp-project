@@ -29,9 +29,6 @@
 	<script> 
 
 
-		//setInterval(requestTotal, 3000);
-
-
 
 		//the animation to show the progress
 		$(document).ready(function(){
@@ -76,7 +73,7 @@
 		                }
 		                else
 		                {
-		                    alert("can't delete the row")
+		                    alert("can't delete the row");
 		                }
 		            }
 
@@ -84,39 +81,26 @@
 		        });
 		});//ends ajax ()
 
-
-
-/*
-
-		function saveCart(obj) 
+	//check the price every 5 millseconds
+		setInterval(function()
 		{
-			var quantity = $(obj).val();
-			var code = $(obj).attr("id");
-			$.ajax(
-			{
-				url: "updateitem.php",
-				type: "POST",
-				data: 'code='+code+'&quantity='+quantity,
-				success: function(data, status){$("#total_amount").html(data)},
-				error: function () {alert("Problen in sending reply!")}
-			});
-		}
+	    	$("#total_amount").load("getprice.php");
 
+	    	//get the value from the span
+	    	var x = document.getElementById('total_amount').innerHTML;
 
-
-		//update the price
-		function requestTotal()
-		{
-			var url = "getprice.php?id='$id'";
-
-			jQuery(#sub).load(url);
-
-
-		}
-
-
-*/
-
+	    	//if cart is empty
+	    	if (x=='0') 
+	    	{
+	    		//display the message
+	    		if (window.confirm('Your cart is empty! Redict you to our main page.')) 
+				{
+					//redirect to the main page
+					window.location.href='IceCreamMenu.php';
+				};
+	    	}
+	    	
+		}, 500);
 
 	</script> 
 
@@ -212,8 +196,8 @@
 			
 		
 			<!--displays the price-->
-			<div id="total_amount" class="jumbotron" style="background-color: lavender;">
-				<h3 style="text-align: center;">Total price: &euro;<?php echo $total;?></h3>
+			<div class="jumbotron" style="background-color: lavender;">
+				<h3 style="text-align: center;">Total price: &euro;<span id="total_amount"></span></h3>
 
 				<button id="paybtn" class="btn btn-dark btn-lg" style="float: right; background-color: pink; color: black;">P    A     Y</button>
 			</div>
@@ -225,10 +209,10 @@
 		else
 		{
 			?>
-			<div class="jumbotron">
-				<a href="IceCreamMenu.php" style="float: right;"><span class="glyphicon glyphicon-home"></span></a>
+			<div class="jumbotron" style="background-color: #AFA1B4">
+				
 				<br>
-				<h2>Empty Cart!</h2>
+				<h2 style="text-align: center;">Empty Cart!</h2>
 			</div>
 			<?php
 		}

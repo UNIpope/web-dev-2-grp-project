@@ -87,18 +87,14 @@
 	 		<div class="collapse navbar-collapse" id="mynavbar">
 			  
 			    <ul class="nav navbar-nav navbar-right">
-			    	<li><a href="#home">HOME</a></li>
-			        <li><a href="#about">ABOUT</a></li>
-			        <li><a href="#scoop">SCOOP <span class="glyphicon glyphicon-ice-lolly-tasted"></span></a></li>
-			        <li><a href="#contact">CONTACT</a></li>
+			    	<li><a href="#home">HOME<span class="glyphicon glyphicon-grain"></span></a></li>
+			        <li><a href="#about">ABOUT<span class="glyphicon glyphicon-leaf"></span></a></li>
+			        <li><a href="#scoop">SCOOP<span class="glyphicon glyphicon-ice-lolly-tasted"></span></a></li>
+			        <li><a href="#contact">CONTACT<span class="glyphicon glyphicon-earphone"></span></a></li>
 			        <li><a href="login.php"><span class="glyphicon glyphicon-user"></span></a></li>
 			        <li><a href="IceCreamCart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
 			        <li><a href="Search.php"><span class="glyphicon glyphicon-search"></span></a></li>
 			       	
-
-
-			        <!--<li><a href="#search"><input type="text" class="form-control" placeholder="Search..." id="input" onkeyup="myFunction()"></a></li> -->
-
 			       
 			    </ul>
 		   	</div>

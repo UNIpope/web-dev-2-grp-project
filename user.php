@@ -24,7 +24,7 @@
 <body>
 
 	<!--update the new pass-->
-	<div class="modal fade" tabindex="-1" role="dialog" id="update_pass">
+	<div class="modal fade" tabindex="-1" role="dialog" id="update_pass" style="background-color: lavenderblush;">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -66,7 +66,7 @@
 			        
 			      </div>
 			      <div class="modal-footer">
-			      	<button type="submit" class="btn btn-default">UPdate</button>
+			      	<button type="submit" class="btn btn-default" style="background-color: pink;">UPdate</button>
 
 			      </div>
 			  </form>
@@ -86,7 +86,7 @@
 		
 
 			<div class="col-sm-10" style="background-color: #E0C4D0;">
-				<div class="jumbotron" style="text-align: center; background-color: lavenderblush;"><h1>Welcome <?php echo $login_session; ?></h1></div>
+				<div class="jumbotron" style="text-align: center; background-color: lavenderblush;"><h1>Welcome <?php echo $login_session; ?><span class="glyphicon glyphicon-ice-lolly-tasted"></span></h1></div>
 
 				<div class="jumbotron" style="background-color: lavenderblush;">
 					<p>Password: 
@@ -96,7 +96,7 @@
 								echo "*";
 							}
 						?>
-						<button type="button" class="btn btn-light" data-toggle="modal" data-target="#update_pass"><span class="glyphicon glyphicon-pencil"></span></button></p>
+						<button type="button" class="btn btn-light" data-toggle="modal" data-target="#update_pass"  style="background-color: lavenderblush; color: #B38989;"><span class="glyphicon glyphicon-pencil"></span></button></p>
 					<p>Email: <?php echo $login_email;?></p>
 
 					<p>Address:
@@ -109,15 +109,15 @@
 						<p>Phone number: <?php echo $login_phone;  ?></p>
 						
 						</div>
-						<a href="remove_user.php" type="button">Deactivate</a>
+						<a href="remove_user.php" style="color: #927387;"><span class="glyphicon glyphicon-alert"></span> Deactivate</a>
 					</p>
 					<div class="row">
 						<div class="col-sm-6" >
-							<h2><a href="Logout.php" style="color: black;"><span class="glyphicon glyphicon-log-out"></span></a></h2>
+							<h2><a href="Logout.php" style="color: #927387;"><span class="glyphicon glyphicon-log-out"></span></a></h2>
 							
 						</div>
 						<div class="col-sm-6">
-						<h2><a href="IceCreamMenu.php" style="float: right; color: black;"><span class="glyphicon glyphicon-home"></span></a></h2>
+						<h2><a href="IceCreamMenu.php" style="float: right; color: #927387;"><span class="glyphicon glyphicon-home"></span></a></h2>
 						</div>
 					</div>
 				</div>

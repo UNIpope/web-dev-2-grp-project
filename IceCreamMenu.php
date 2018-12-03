@@ -18,6 +18,11 @@
 	<!-- include CDN(Content Delivery Network) MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!--font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
@@ -367,17 +372,28 @@
 
 		<br><br>
 
-		<div class="jumbotron" id="contact" style="background-color: lavender;">
+		
+
+		<div class="jumbotron" id="contact" style="background-color: #F0E6F3;">
 		<!--background-color: #D4F5C5;" >-->
 			<h2 ><mark>Contact</mark></h2>
 			<div class="row">
 				<div class="col-sm-6">
-					<p>blahhhhhhhhhhhhh</p>
-					<p>blahhhhhhhhhhhhhhh</p>
-					<p>blahhhhhhhhhhhhhhh</p>
-					<p>blahhhhhhhhhhhhhhh</p>
-					<p>blahhhhhhhhhhhhhhh</p>
-					<p>blahhhhhhhhhhhhhhh</p>
+					<br>
+					<h3>CONEction I Scream<span class="glyphicon glyphicon-ice-lolly-tasted"></span></h3>
+					<br>
+					<p>Address: 3338 Ford Street, San Jose, CA, California, 95131</p>
+					<p>Mobile: 408-724-9621</p>
+					<p>Telephone: 408-525-6725</p>
+					<br>
+					<p>Follow us on social Media:</p>
+					<a href="http://www.facebook.com/" target="_blank"><span class="fa fa-facebook-square" style="font-size:36px"></span></a>
+					<a href="https://www.linkedin.com/" target="_blank" ><span class="fa fa-linkedin-square" style="font-size:36px;"></span></a>
+					<a href="https://www.pinterest.ie/" target="_blank"><span class="fa fa-pinterest-square" style="font-size:36px"></span></a>
+					<a href="https://www.snapchat.com/"  target="_blank"><span class="fa fa-snapchat" style="font-size:36px"></span></a>
+					<a href="https://www.tripadvisor.ie/" target="_blank"><span class="fa fa-tripadvisor" style="font-size:36px"></span></a>
+					<a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter" style="font-size:36px"></span></a>
+					
 				</div>
 
 				<div class="col-sm-6">
@@ -389,6 +405,7 @@
 			</div>
 			
 		</div><!--contact-->
+
 
 
 

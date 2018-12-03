@@ -50,7 +50,6 @@
 				<!-- buttons for serch and filter  -->
 				<div class="col-auto">
 					<button class="btn btn-lg btn-dark" type="submit" name="sub" style="float: center; background-color: pink; color: black;">Search</button>
-					<button class="btn btn-lg btn-dark" name="adv" style="float: center; background-color: pink; color: black;">Advanced</button> <!-- no implemtation -->
 				</div>
 			</div>
 		</form>
