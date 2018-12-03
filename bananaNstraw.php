@@ -123,7 +123,7 @@
 									
 
 
-
+									<!--modal from getbootstrap.com -->
 									<!-- Modal popup -->
 									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
 

@@ -3,6 +3,15 @@
 	Purpose: Display the menu of the shop
 	Authors: Jack Duggan + Buchita Gitchamnan	
 	Reference: https://codepen.io/anon/pen/EOomaQ
+
+
+
+
+
+
+	***********************************************************************
+	all the code from this page is from https://codepen.io/anon/pen/EOomaQ
+	***********************************************************************
 -->
 
 

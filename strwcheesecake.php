@@ -117,7 +117,10 @@
 								<div style="float: right;">
 									<!-- a button to trigger modal-->
 									<button id="btnsub" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">ORDER</button>
+									
 
+
+									<!-- getbootstrap.com-->
 									<!-- Modal popup -->
 									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
 
