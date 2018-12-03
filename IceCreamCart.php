@@ -81,7 +81,7 @@
 		        });
 		});//ends ajax ()
 
-	//check the price every 5 millseconds
+	//check the price every 5 seconds
 		setInterval(function()
 		{
 	    	$("#total_amount").load("getprice.php");
