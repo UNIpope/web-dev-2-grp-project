@@ -2,7 +2,8 @@
 	Website: Ice Cream Store
 	Purpose: Display the menu of the shop
 	Authors: Jack Duggan + Buchita Gitchamnan	
-	Reference: www.w3schools.com
+	Reference: www.w3schools.com					//bootstarp
+	Reference: https://stackoverflow.com/a/60496  	//for injection prevention 
 -->
 
 <!DOCTYPE html>
@@ -38,28 +39,32 @@
 	<br/>
 	
 	<div class="container">
+		<!-- search form -->
 		<form class="card card-sm" method="post" >
 			<div class="card-body row no-gutters align-items-center">
 				<div class="col">
 					<input class="form-control form-control-lg form-control-borderless" type="search" name="sr" placeholder="Enter name of ice cream.">
-				</div>
-				<!--end of col-->
+				</div><!--end of col-->
+				
 				<br/>
+				<!-- buttons for serch and filter  -->
 				<div class="col-auto">
 					<button class="btn btn-lg btn-success" type="submit" name="sub" style="float: center; background-color: pink; color: black;">Search</button>
-					<button class="btn btn-lg btn-success" name="adv" style="float: center; background-color: pink; color: black;">Advanced</button>
+					<button class="btn btn-lg btn-success" name="adv" style="float: center; background-color: pink; color: black;">Advanced</button> <!-- no implemtation -->
 				</div>
-				<!--end of col-->
 			</div>
 		</form>
-	</div>
+	</div><!--end search form container -->
 	
 	
-	<?php	
-		if (isset($_POST['sub'])) {
+	<?php
+		//if something is submitted from form
+		if (isset($_POST['sub'])) 
+		{
 			
 			//create a connect to the database
-			$con = mysqli_connect("localhost", "root", "","ice_cream_db");
+			//$con = mysqli_connect("localhost", "root", "","ice_cream_db");
+			$con = new mysqli("localhost", "root", "", "ice_cream_db");
 
 			//check connection
 			if (mysqli_connect_errno())
@@ -68,55 +73,72 @@
 				echo "failed to connect".mysqli_connect_errno();
 			}
 
-
-			$sr = $_POST["sr"]; 
-			//select where name = sr
-			$all = "SELECT name, pic, price FROM ice_cream where name like '%".$sr."%'";
+			//get term
+			$sr = "%".$_POST["sr"]."%"; 
+			//select where ?
+			$all = 'SELECT name, pic, price FROM ice_cream where name like ?';
 			
-			
-			$rows = mysqli_query($con, $all);
-			echo "<br> <br>";
-			if (mysqli_num_rows($rows) > 0) 
+			//prep/run 
+			if($stmt = $con->prepare($all))
 			{
+				//get term
+				$sr = "%".$_POST["sr"]."%";
 				
-				while ($row = mysqli_fetch_array($rows)) 
-				{ 
-			?>
-			<!-- start the menu. no style for the list-->
-			
+				//bind string, exacute , get data
+				$stmt->bind_param('s', $sr); // 's' specifies the variable type => 'string'
+				$stmt->execute();
+				$rows = $stmt->get_result();
 				
-					<!-- set the menu to be half ie 6-->
-					<div class="col-sm-3" style="background-color: #D8C0F1;">
+				
+				echo "<br> <br>";
+				//check if there are rows
+				if (mysqli_num_rows($rows) > 0) 
+				{
+					//cycle trough rows
+					while ($row = mysqli_fetch_array($rows)) 
+					{ 
+					?>
+						<!-- set the menu to be half ie 6-->
+						<div class="col-sm-3" style="background-color: #D8C0F1;">
 
-						<!-- declare card -->
-						<div class="card sm-1 box-shadow">
+							<!-- declare card -->
+							<div class="card sm-1 box-shadow">
 
-							<?php
-								$pic = $row['pic'].".png";
-							?>
+								<?php
+									//var
+									$pic = $row['pic'].".png";
+									$ord = $row['pic'].".php";
+								?>
 
-							<!-- img at the top of the card-->
-							<img class="card-imag-top" src="<?php echo $pic ?>">
+								<!-- img at the top of the card-->
+								<img class="card-imag-top" src="<?php echo $pic ?>">
 
-							<!-- start the card body-->
-							<div class="card-body">
+								<!-- start the card body-->
+								<div class="card-body">
+									
+									<!-- name, pic, order button in body --> 
+									<h3 class="card-title"><?php echo $row['name']?><span class="badge badge-pill badge-danger"style="background-color: red;">NEW</span></h3>
+									<p class="card-text"><?php echo "Price: ".$row['price'] ?></p>
+									<a target="_self" class="btn btn-light" href="<?php echo $ord ?>" role="button" style="background-color: orange;">Order</a>
 
-								<h3 class="card-title"><?php echo $row['name']?><span class="badge badge-pill badge-danger"style="background-color: red;">NEW</span></h3>
+									<br>
+									<br>
 
-								<p class="card-text"><?php echo "Price: ".$row['price'] ?></p>
-
-								<a target="_self" class="btn btn-light" role="button" style="background-color: orange;">Order</a>
-
-								<br>
-								<br>
-
-
-							
-						</div><!-- end card-->							
-					</div><!-- end half -->
-				</div>
+								</div><!-- end body-->							
+							</div><!-- end col -->
+						</div><!-- end card -->
 			
-			<?php
-			}}}
-			?>
-</body></html>
+					<?php
+					}//end while row
+				}//end if >0
+			}//end if prep
+			else 
+			{
+				//error printing
+				$error = $con->errno . ' ' . $con->error;
+				echo $error;
+			}//end else
+		}//end if serch
+	?>
+</body>
+</html>
