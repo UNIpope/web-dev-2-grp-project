@@ -49,8 +49,8 @@
 				<br/>
 				<!-- buttons for serch and filter  -->
 				<div class="col-auto">
-					<button class="btn btn-lg btn-success" type="submit" name="sub" style="float: center; background-color: pink; color: black;">Search</button>
-					<button class="btn btn-lg btn-success" name="adv" style="float: center; background-color: pink; color: black;">Advanced</button> <!-- no implemtation -->
+					<button class="btn btn-lg btn-dark" type="submit" name="sub" style="float: center; background-color: pink; color: black;">Search</button>
+					<button class="btn btn-lg btn-dark" name="adv" style="float: center; background-color: pink; color: black;">Advanced</button> <!-- no implemtation -->
 				</div>
 			</div>
 		</form>
@@ -65,14 +65,12 @@
 			//create a connect to the database
 			//$con = mysqli_connect("localhost", "root", "","ice_cream_db");
 			$con = new mysqli("localhost", "root", "", "ice_cream_db");
-
 			//check connection
 			if (mysqli_connect_errno())
 			{
 				#fail to connects
 				echo "failed to connect".mysqli_connect_errno();
 			}
-
 			//get term
 			$sr = "%".$_POST["sr"]."%"; 
 			//select where ?
@@ -99,7 +97,7 @@
 					{ 
 					?>
 						<!-- set the menu to be half ie 6-->
-						<div class="col-sm-3" style="background-color: #D8C0F1;">
+						<div class="col-sm-3" style="background-color: lavenderblush;">
 
 							<!-- declare card -->
 							<div class="card sm-1 box-shadow">
